@@ -12,7 +12,7 @@
         $name = $_POST['Name'];
         $email = $_POST['Email'];
         $message = $_POST['Message'];
-        $header = "from: $name <$email>";
+        $header = "from: $name $email";
 
         mail($myEmailAddress, $subject, $message, $header);
 
